@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Port Setting
+from django.core.management.commands.runserver import Command as runserver
+runserver.default_port = '9999'
 
 # Application definition
 
